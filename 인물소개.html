@@ -1,40 +1,45 @@
 ﻿<html>
 <head>
 	<title>인물소개</title>
+
 <style type="text/css">
 
-body{margin: 0 auto;
+  body{ margin: 0 auto;
       padding: 30px 30px;
-      max-width: 1500px;
+      max-width: 800px;
+      text-align: center;
+      background-color:black;}
 
-  background-color:black;}
+  h2 { font-family: sans-serif;}
+  h5 { color : #D4F4FA;}
 
-h2 { font-size:15px; color: #D5D5D5; font-family: serif;}
-h5 { color : #D4F4FA;}
-p     {font-family:serif;
+  p {font-family:serif;
 		font-size: 12px; line-height: 200%; color: #D4F4FA;}
 
 #c{
-        display: table; 
-  margin-left: auto; 
-margin-right: auto;
-  width:160px;
-  height:90px;
-  margin-top: 10px;
-       }
+        display:block;
+        margin-left: auto; 
+        margin-right: auto;
+        width:160px;
+        height:90px;
+        margin-top: 10px;}
 
 img{ 
   margin-left: auto;
   margin-right: auto;
-max-width: 100%;
 height: auto;
-opacity: 0.5;} 
+opacity: 0.5;
+transition: opacity .5s ease-in;} 
 
 img:hover{
   opacity: 1;}
 
 
 @media screen and (min-width:320px) and (max-width:640px){
+#in{font-size: 8px; color:#8e6826;}
+
+
+
 .name1{
 	font-size: 10px;
 
@@ -42,11 +47,11 @@ img:hover{
 .speak{font-size:8px; color: #F6F6F6; }
 
 #h{
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 50px;
   margin-bottom: 40px;
 text-align: center;
-font-family: serchea;
+
 }
 .cap {
 		font-size: 8px;
@@ -57,16 +62,19 @@ line-height:12.5px;}
 @media screen and (min-width:641px) and (max-width:1024px){
 .name1{
 	font-size: 15px;
-
 	color: #FFD9EC}
-.speak{font-size:12px; color: #FAECC5; }
 
+  #in{font-size: 10px; color : #AFA226;}
+
+.img {width: 70px; height: auto;}
+
+.speak{font-size:12px; color: #FAECC5; }
 #h{
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 50px;
   margin-bottom: 40px;
 text-align: center;
-font-family: serchea;
+
 }
 
 .cap {
@@ -83,14 +91,17 @@ line-height:15px;}
 
 	color: #DAD9FF}
 .speak{font-size:15px; color: #FFD8D8;}
+#in{font-size: 13px; color : #E5D85C;}
 
 #h{
-  font-size: 40px;
+  font-size: 25px;
   margin-top: 50px;
   margin-bottom: 40px;
 text-align: center;
-font-family: serchea;
+
 }
+
+
 .cap {
 
 		font-size: 12px;
@@ -100,6 +111,34 @@ line-height:30px;}
 }
 
 .cap:hover{color:white;}
+
+@media print and (min-width:1025px) and (max-width:1500px){
+.name1{
+  font-size: 18px;
+
+  color: #DAD9FF}
+.speak{font-size:15px; color: #FFD8D8;}
+#in{font-size: 13px; color : #E5D85C;}
+
+#h{
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+text-align: center;
+
+}
+
+
+.cap {
+
+    font-size: 12px;
+
+line-height:30px;}
+
+}
+
+.cap:hover{color:white;}
+
 
 a:link {text-decoration: none; color: #8e6826;}
 a:visited {text-decoration: none; color: #8e6826;}
@@ -113,30 +152,33 @@ a:hover {text-decoration: underline; color: #b78734;}
 
 	<img src="cla white.png" alt="클래식" id="c">
 	<div id="header"> 
-			      <div id="h"><a href="index.html" target="self">홈</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="story.html">줄거리</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="inmul19.html">인물정보</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="pic.html">명장면</a></div>
+			      <div id="h"><a href="index.html" target="self">메인화면</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="story.html">줄거리</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="vi.html">영상</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="scren.html">명장면</a></div>
 	</div>
   
-  <div>
+  <div id="in">
     <center><h2>인물소개</h2></center>
     
   <br>
+  <div id="laze">
   <class id="img">
-<img id="monkey" src="http://tv03.search.naver.net/nhnsvc?size=111x139&quality=9&q=http://sstatic.naver.net/people/portrait/201203/20120322112614873.jpg" width="100" height="100" class="rati" alt="주인공남자"> <p class ="name1">조승우(준하 역)</p><p class="cap">가만히 눈을 감으면 심장 뛰는 소리가 들리면 당신이 사랑하는 사람이 당신을 생각하고 있는 것입니다. 바람이 부는날 창밖으로 보이는 나뭇잎이 바람에 흔들리면 당신이 사랑하는 사람이 당신을 그리워 하는 것입니다</p>
+<img src="http://tv03.search.naver.net/nhnsvc?size=111x139&quality=9&q=http://sstatic.naver.net/people/portrait/201203/20120322112614873.jpg" width="100" height="100" class="rati" alt="주인공남자"> <p class ="name1">조승우(준하 역)</p><p class="cap">가만히 눈을 감으면 심장 뛰는 소리가 들리면 당신이 사랑하는 사람이 당신을 생각하고 있는 것입니다. 바람이 부는날 창밖으로 보이는 나뭇잎이 바람에 흔들리면 당신이 사랑하는 사람이 당신을 그리워 하는 것입니다</p>
 
 <p class="speak">
 
 	1968년 여름... 방학을 맞아 시골 삼촌댁에 간 준하(조승우 분)는 그곳에서 성주희(손예진 분)를 만나, 한눈에 그녀에게 매료된다. </p>
 </class>
   <br>
+     <hr>
 <hr>
 <class id="img">
-<p><img id="monkey" src="http://tv03.search.naver.net/nhnsvc?size=111x139&quality=9&q=http://sstatic.naver.net/people/portrait/201104/20110412120400905.jpg" alt="주인공여자" width="100" height="150"> 
+<p><img src="http://tv03.search.naver.net/nhnsvc?size=111x139&quality=9&q=http://sstatic.naver.net/people/portrait/201104/20110412120400905.jpg" alt="주인공여자" width="100" height="150"> 
 	<p class ="name1">손예진(지혜/주희 역)</p><p class="cap">나 어때보여?.... 나 지금 울고있어, 눈물 안보여? 왜 숨겼어 앞을 못본다는거..</p><p class="speak">지혜:지혜(손예진 분)는 연극반 선배 상민(조인성 분)을 좋아한다. 하지만 호들갑스런 수경이 상민에게 보낼 편지의 대필을 부탁하고, 지혜는 수경의 이름으로 상민을 향한 자신의 감정을 고백한다. 지혜의 편지로 맺어진 수경과 상민이 가까워지면서 지혜는 괜한 죄의식에 상민을 멀리 하려 하지만, 우연하게도 자꾸만 마주치게 된다....</p>
 </class>
   <br>
+     <hr>
 <hr>
 <class id="img">
-<p><img id="monkey" src="http://tv03.search.naver.net/nhnsvc?size=111x139&quality=9&q=http://sstatic.naver.net/people/31/201206150822117061.jpg" alt="ex" width="100" height="150"> <p class ="name1">이기우 (태수 역)</p><p class="cap">나는 꼭 한여자만 사랑하자는 주의는 아니지만 말이야</p>
+<p><img src="http://tv03.search.naver.net/nhnsvc?size=111x139&quality=9&q=http://sstatic.naver.net/people/31/201206150822117061.jpg" alt="ex" width="100" height="150"> <p class ="name1">이기우 (태수 역)</p><p class="cap">나는 꼭 한여자만 사랑하자는 주의는 아니지만 말이야</p>
 
 <p class="speak">준하 친구 태수는 집안에서 맺어주려고하는 주희를 위해 준하(조승우 분) 을 위해서 편지대필을 하게된다. 그러나 준하와 지혜가 서로 사랑하는 사이임을 깨닫고 마음을 접게되지만 집안에서의 강력한 반대로 태수는 자살까지 시도하게되는데...</p>
 </class>
@@ -144,11 +186,13 @@ a:hover {text-decoration: underline; color: #b78734;}
     <hr>
  <hr>
 <class id="img">
-<p><img id="monkey" src="http://tv03.search.naver.net/nhnsvc?size=111x139&quality=9&q=http://sstatic.naver.net/people/181/201303291401099981.jpg" alt="ex" width="100" height="150"><p class ="name1">조인성 (상민 역)</p><p class="cap">그 애.. 참 이상해. 우연이라고 생각하기엔 너무도 많은 일이 일치했어. 처음엔 그냥, 내가 좋아하기 때문에 자꾸 연결시키는게 아닌가 생각도 했지만... 그게 아닌것 같아.</p>
+<p><img src="http://tv03.search.naver.net/nhnsvc?size=111x139&quality=9&q=http://sstatic.naver.net/people/181/201303291401099981.jpg" alt="ex" width="100" height="150"><p class ="name1">조인성 (상민 역)</p><p class="cap">그 애.. 참 이상해. 우연이라고 생각하기엔 너무도 많은 일이 일치했어. 처음엔 그냥, 내가 좋아하기 때문에 자꾸 연결시키는게 아닌가 생각도 했지만... 그게 아닌것 같아.</p>
 
 <p class="speak">연극반 지혜의 선배인 상민은 여자친구가 있음에도 불구하고 우연히 마주치는 지혜를 좋아하게 되는데 .</p>
 </class>
+</div>
   <br>
+     <hr>
   <hr>
 </body>
 </html>

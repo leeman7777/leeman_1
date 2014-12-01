@@ -1,176 +1,102 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-        <title>classic</title>
- <script>
-window.onload = function(){
-  var d= new Date();
-  var h= d.getHours();
-  if (h<12){
-    alert("Wellcome to classic homepage." );
-  }
-  else{
-    alert("Wellcome to classic homepage. Come here~ so so Sweat");
-  }
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<title>classic main</title>
+
+<style type="text/css">
+
+body{ margin: 0px auto;
+background-color: black;
 }
-  </script>
-
-<style type="text/css" media="screen and (min-width: 100px) and (max-width:3000px)">
-
-body{
-  background-color: black;
-}
-                    #j{
-                max-width: 100%;
-                height: auto;
-                  margin-top: 0px;
-  margin-bottom: 20px;
-display: table;
- margin-left: auto; margin-right: auto;
-  opacity: 0.6;
-            }
-@media screen and (max-width:640px){
-  #j{
-  width:300px;
-  height: 20px;
-}}
-@media screen and (min-width: 641px) and (max-width:1024px){
-  #j{
-  width:500px;
-  height: 30px;
-}}
-@media screen and (min-width: 1024px){
-  #j{
-  width:800px;
-  height: 50px;
-}}
-
-#img{
-  max-width: 100%;
-  height: auto;
-    opacity: 0.3;
-transition: opacity 2s;
-}
-@media screen and (max-width:840px){
-
-#img{
-width: 100%;
-  height: auto;
-    opacity: 0.3;
-transition: opacity 2s;
-}}
-@media screen and (min-width: 841px) and (max-width:1600px){
-  #img{
-width: 100%;
-  height: auto;
-    opacity: 0.3;
-transition: opacity 2s;
-}}
-@media screen and (min-width: 1600px){
-    #img{
-width: 100%;
-  height: 685px;
-    opacity: 0.3;
-transition: opacity 2s;
-}
-}
-
-
-
-
-
-#img:hover{
-  opacity: 1;
-}
-#j{
-  width:800px;
-  height: 50px;
-  margin-top: 0px;
-  margin-bottom: 20px;
-display: table;
- margin-left: auto; margin-right: auto;
-  opacity: 0.6;
-}
-
-
-#d{
-  max-width:200px;
-  height: auto;
-display: table;
- margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  opacity: 0.6;
-}
-@media screen and (max-width:640px){
-  #d{
-  width:200px;
-  height: 30px;
-margin-top: 5px;
-}}
-
-@media screen and (min-width: 641px) and (max-width:1024px){
-#d{
-  width:200px;
-  height: 30px;
-margin-top: 10px;
-}}
-@media screen and (min-width: 1024px){
-#d{
-  width:200px;
-  height: 30px;
-  margin-top: 20px;
-}}
-
 
 #h{
-  font-size: 30px;
+margin-top: 20px;
+font-size: 20px;
 text-align: center;
-font-family: serchea;
+font-family: serif;
 }
-@media screen and (max-width:640px){
-#h{
-  margin-top: 10px;
-  font-size: 20px;
+
+#d{
+max-width:200px;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+opacity: 0.6;
+}
+
+#j{ margin-top: 0px;
+margin-bottom: 20px;
+display: block;
+margin-left: auto; margin-right: auto;
+opacity: 0.6;
+}
+
+#topImg{position: absolute;
 text-align: center;
-font-family: serchea;
+margin:0 auto;
+transition: opacity .5s ease-in;
+
 }
-}
-@media screen and (min-width: 641px) and (max-width:1024px){
-  #h{
-    margin-top: 30px;
-  font-size: 20px;
-text-align: center;
-font-family: serchea;
-}
-}
-@media screen and (min-width: 1024px){
-    #h{
-      margin-top: 50px;
-  font-size: 30px;
-text-align: center;
-font-family: serchea;
-}}
+/*마우스 오버시 알파 값을 0으로 설정*/
+#transitionDemo {text-align: center;}
+#topImg:hover{ opacity:0; }
+
+@media screen and (min-width:320px) and (max-width:640px){
+	#h {font-size: 10px;}
+	#d{margin-top: 10px; width: 40%;}
+	#j{margin-top: 10px; width: 40%;}}
+	
+
+	@media screen and (min-width:641px) and (max-width:1024px){
+    #h {font-size: 15px;}
+	#d {margin-top: 15px;width: 50%;}
+	#j {margin-top: 15px;width: 40%;}}
+
+
+
+		@media screen and (min-width:1025px) and (max-width:1500px){
+    #h {font-size: 20px;}
+    #d {margin-top: 20px;width: 55%;}
+    #j {margin-top: 20px;width: 45%;}}
+
+
+			@media screen and (min-width:1501px) and (max-width:2500px){
+	#h {font-size: 25px;}
+	#d {margin-top: 25px; width: 55%;}
+	#j {margin-top: 25px; width: 50%;}}
+
+
+	@media print and (min-width:1501px) and (max-width:2500px){
+	#h {font-size: 25px;}
+	#d {margin-top: 25px; width: 55%;}
+	#j {margin-top: 25px; width: 50%;}}
 
 a:link {text-decoration: none; color: #8e6826;}
 a:visited {text-decoration: none; color: #8e6826;}
 a:active {text-decoration: none; color: #8e6826;}
 a:hover {text-decoration: underline; color: #b78734;}
 @font-face {
-        font-family: serchea;
-        src: url("https://drive.google.com/file/d/0B4MCfGpG0EY1QU9FSlY3NGgzaEE/view?usp=sharing.eot");
-        src: local('문체부 궁체 정자체'), url("https://drive.google.com/file/d/0B4MCfGpG0EY1ZEJOeGFtck9QbGc/view?usp=sharing.woff") format("woff");
-       }
+font-family: serchea;
+src: url("https://drive.google.com/file/d/0B4MCfGpG0EY1QU9FSlY3NGgzaEE/view?usp=sharing.eot");
+src: local('문체부 궁체 정자체'), url("https://drive.google.com/file/d/0B4MCfGpG0EY1ZEJOeGFtck9QbGc/view?usp=sharing.woff") format("woff");
+}
 
-        </style>
-    </head>
-    <body>
-        <img src="jang.png" alt="장식" id="j">
-        <div id="box"></div>
-       <img src="kuku.jpg" alt="클래식" id="img">
-      <div id="h"><a href="story.html">줄거리</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="inmul19.html">인물정보</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="pic.html">명장면</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="vi.html">영상</a></div>
-      <img src="dang.png" alt="장식" id="d">
-    </body>
+</style>
+</head>
+<body>
+<img src="jang.png" alt="장식" id="j">
+<div id="box"></div>
+<div id="transitionDemo">
+<img id="topImg" src="kuku.jpg" alt="인셉션배너1">
+<img id="bottomImg" src="imgthumb_1.jpg" alt="인셉션배너2">
+</div>
+<div id="box"></div>
+<div id="h"> <a href="story.html">줄거리</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="인물소개.html">인물소개</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="scren.html">명장면</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="vi.html">영상</a> </div>
+<div>
+<img src="dang.png" alt="장식" id="d">
+</div>
+</body>
 </html>
